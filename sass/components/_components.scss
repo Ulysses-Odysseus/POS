@@ -1,0 +1,29 @@
+.container-fluid {
+    max-width: 1700px;
+    margin: 0 auto;
+    @include clearfix;
+
+    @include screen(desktop) {
+        width: $desktop;
+    }
+}
+
+.main-content{
+	& > :first-child{
+    	padding-top: 200px;
+    }
+}
+
+// Buttons
+.round-button{
+	padding: 10px 25px;
+	text-decoration: none;
+	border: 2px solid $white;
+	@include border-radius(25px);
+}
+
+// Button Color
+.btn{
+	color: $white;
+	font-family: $hi-b;
+}

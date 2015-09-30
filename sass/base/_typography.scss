@@ -1,0 +1,34 @@
+//
+// Fonts
+// --------------------------------------------------
+
+@mixin font-face-src($name, $file) {
+    font-family: #{$name};
+    src: url("../fonts/site/#{$file}.ttf") format("truetype");
+}
+
+@font-face {
+    @include font-face-src("HindiBold", "Hind-Bold");
+}
+
+@font-face {
+    @include font-face-src("HindiLight", "Hind-Light");
+}
+
+@font-face {
+    @include font-face-src("HindiMedium", "Hind-Medium");
+}
+
+@font-face {
+    @include font-face-src("HindiRegular", "Hind-Regular");
+}
+
+@font-face {
+    @include font-face-src("HindiSemiBold", "Hind-Semibold");
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}

@@ -1,0 +1,31 @@
+.homePage{
+	padding-bottom: 150px;
+	background: url('../images/hero.jpg') no-repeat center;	
+	background-size: cover;
+
+	&__intro{
+		color: #ffffff;
+		text-align: center;
+
+		&__message{
+
+			h1{
+				margin: 0;
+				font-size: 66px;
+				line-height: 66px;
+				font-family: $hi-b;
+			}
+			p{
+				font-size: 22px;
+				line-height: 30px;
+				font-family: $hi-m;
+			}
+
+			.round-button{
+				font-size: 16px;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+			}
+		}
+	}
+}

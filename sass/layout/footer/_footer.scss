@@ -1,0 +1,41 @@
+footer{
+	border-top: 6px solid $main-blue;
+	background: $dark-grey;
+	
+	.footer-container{
+		padding: 30px 0;
+	}
+}
+
+.footer-logo{
+	float: left;
+	
+	img{ width: 130px;}
+
+	p{
+		color: $light-grey;
+		font-size: 12px;
+		font-family: $hi-m;
+	}
+}
+
+.footer-nav{
+	float: right;
+	list-style-type: none;
+
+	&__listItem{
+		display: inline-block;
+
+		&:not(:first-child) a{
+			margin-left: 60px;
+		}
+
+		a{
+			color: #fff;
+			font-family: $hi-b;
+			font-size: 14px;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+	}
+}

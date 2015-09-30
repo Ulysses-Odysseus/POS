@@ -1,0 +1,90 @@
+// This mixin is intended to be applied to an :after pseudo-class. Example:
+//  &:after {
+//      @include clearfix;
+//  }
+@mixin clearfix {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+// vertical align
+
+@mixin vertical-align {
+    top: 50%;
+    display:block;
+    position:relative;
+    @include transform(translateY(-50%));
+}
+
+@mixin vh-align {
+    top: 50%;
+    left: 50%;
+    @include transform(translateY(-50%) translateX(-50%));
+}
+
+// screen breakpoints //
+
+@mixin screen($media) {
+    @if $media == mobile {
+        @media only screen and (min-width: $mobile-portrait) {
+            @content;
+        }
+    }
+    @if $media == mobile-max {
+        @media only screen and (max-width: $mobile-landscape - 1px) {
+            @content;
+        }
+    }
+    @else if $media == mobile-l {
+        @media only screen and (min-width: $mobile-landscape) {
+            @content;
+        }
+    }
+    @else if $media == mobile-l-max {
+        @media only screen and (max-width: $tablet-portrait - 1px) {
+            @content;
+        }
+    }
+    @else if $media == tablet {
+        @media only screen and (min-width: $tablet-portrait) {
+            @content;
+        }
+    }
+    @else if $media == tablet-max {
+        @media only screen and (max-width: $tablet-landscape - 1px) {
+            @content;
+        }
+    }
+    @else if $media == tablet-l {
+        @media only screen and (min-width: $tablet-landscape) {
+            @content;
+        }
+    }
+    @else if $media == tablet-l-max {
+        @media only screen and (max-width: $tablet-landscape - 1px) {
+            @content;
+        }
+    }
+    @else if $media == desktop {
+        @media only screen and (min-width: $desktop) {
+            @content;
+        }
+    }
+    @else if $media == desktop-l {
+        @media only screen and (min-width: $desktop-large) {
+            @content;
+        }
+    }
+    @else if $media == desktop-sm-height {
+        @media only screen and (max-height: $desktop-sm-hg) {
+            @content;
+        }
+    }
+}
