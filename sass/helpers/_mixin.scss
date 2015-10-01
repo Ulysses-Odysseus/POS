@@ -88,3 +88,25 @@
         }
     }
 }
+
+// Font Mixin's
+@mixin font-size($size: $baseFontSize, $lineHeight: $baseLineHeight) {
+    font-size: $size;
+    line-height: $lineHeight;
+}
+
+
+@mixin font-smoothing($value: antialiased) {
+  @if $value == antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @else if $value == subpixel-antialiased {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+  @else {
+    -webkit-font-smoothing: $value;
+     -moz-osx-font-smoothing: $value;
+  }
+}

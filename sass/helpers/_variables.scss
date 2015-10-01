@@ -2,9 +2,15 @@
 
 $black: #000000;
 $white: #ffffff;
+$off-white: #f0f0f0;
 $light-grey: #959595;
 $dark-grey: #363636;
 $main-blue: #0070b8;
+$teal: #50c2c9;
+
+// Secondary Colors
+$violet: #6e3cb7;
+$secondary-blue: #2476cf;
 
 // Screen Breakpoints
 
@@ -23,3 +29,7 @@ $hi-l: "HindiLight";
 $hi-m: "HindiMedium";
 $hi-r: "HindiRegular";
 $hi-sb: "HindiSemiBold";
+
+// Base Settings for Font
+$baseFontSize:	15px;
+$baseLineHeight: 1.8;

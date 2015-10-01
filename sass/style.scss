@@ -1,10 +1,13 @@
+@import "vendors/bourbon/bourbon";
+
 @import "base/reset";
 @import "base/typography";
 
-@import "helpers/mixin";
 @import "helpers/variables";
+@import "helpers/mixin";
 
 @import "components/components";
 
 @import "layout/layout";
 @import "pages/pages";
+
