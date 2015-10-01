@@ -49,7 +49,7 @@
 			else // scrolled down; element slides out
 				$element.css( 'top', Math.abs( elTop ) > elHeight ? -elHeight : elTop );
 		}
-		console.log('Current Scroll: '+ wScrollCurrent);
+		// console.log('Current Scroll: '+ wScrollCurrent);
 		wScrollBefore = wScrollCurrent;
 	});
 

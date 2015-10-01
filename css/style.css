@@ -1015,4 +1015,20 @@ footer .footer-container {
   box-shadow: none;
 }
 
+/* line 132, ../sass/pages/homepage/_homepage.scss */
+.testimonials {
+  text-align: center;
+  margin-bottom: 130px;
+  background: url("../images/homepage/abstract-connected.png") no-repeat center;
+}
+/* line 146, ../sass/pages/homepage/_homepage.scss */
+.testimonials .testimonials-slider {
+  max-width: 800px;
+  margin: 0 auto;
+}
+/* line 149, ../sass/pages/homepage/_homepage.scss */
+.testimonials .testimonials-slider div {
+  background: red;
+}
+
 /*# sourceMappingURL=style.css.map */
