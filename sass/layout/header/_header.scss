@@ -37,6 +37,10 @@
    @include screen(mobile-l-max){
 		display: block;
    }
+	
+	@include screen(mobile-l-max){
+	   margin: 0px 10px;
+	}
 }
 
 .logo{
@@ -48,6 +52,7 @@
 	list-style-type: none;
 
 	@include screen(mobile-l-max){
+		display: none;
 		padding-left: 0;
 	}
 
@@ -73,5 +78,31 @@
 				@include border-radius(15px);
 			}
 		}
+	}
+}
+
+.mobile-menu{
+	height: 10px;
+	margin-top: 40px;
+	float: right;
+
+	a, .icon-menu{
+		color: #ffffff;
+		text-decoration: none;
+	}
+
+	a{
+		font-family: $hi-b;
+		text-transform: uppercase;
+
+		@include font-size(20px, 1);
+
+	}
+
+	.icon-menu{
+		float: right;
+
+		@include font-size(40px);
+		@include vertical-align;
 	}
 }

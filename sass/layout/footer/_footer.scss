@@ -17,6 +17,12 @@ footer{
 		font-size: 12px;
 		font-family: $hi-m;
 	}
+
+	@include screen(mobile-l-max){
+		float: none;
+		display: block;
+		text-align: center;
+   }
 }
 
 .footer-nav{
@@ -38,4 +44,9 @@ footer{
 			text-transform: uppercase;
 		}
 	}
+
+	@include screen(mobile-l-max){
+		float: none;
+		display: block;
+   }
 }

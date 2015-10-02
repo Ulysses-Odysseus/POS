@@ -1115,32 +1115,39 @@ body {
     display: block;
   }
 }
+@media only screen and (max-width: 767px) {
+  /* line 27, ../sass/layout/header/_header.scss */
+  .nav-container {
+    margin: 0px 10px;
+  }
+}
 
-/* line 42, ../sass/layout/header/_header.scss */
+/* line 46, ../sass/layout/header/_header.scss */
 .logo {
   float: left;
 }
 
-/* line 46, ../sass/layout/header/_header.scss */
+/* line 50, ../sass/layout/header/_header.scss */
 .main-nav {
   float: right;
   list-style-type: none;
 }
 @media only screen and (max-width: 767px) {
-  /* line 46, ../sass/layout/header/_header.scss */
+  /* line 50, ../sass/layout/header/_header.scss */
   .main-nav {
+    display: none;
     padding-left: 0;
   }
 }
-/* line 54, ../sass/layout/header/_header.scss */
+/* line 59, ../sass/layout/header/_header.scss */
 .main-nav__listItem {
   display: inline-block;
 }
-/* line 57, ../sass/layout/header/_header.scss */
+/* line 62, ../sass/layout/header/_header.scss */
 .main-nav__listItem:not(:first-child) a {
   margin-left: 30px;
 }
-/* line 61, ../sass/layout/header/_header.scss */
+/* line 66, ../sass/layout/header/_header.scss */
 .main-nav__listItem a {
   padding: 6px 15px 3px 15px;
   color: #fff;
@@ -1149,13 +1156,46 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
-/* line 69, ../sass/layout/header/_header.scss */
+/* line 74, ../sass/layout/header/_header.scss */
 .main-nav__listItem a:hover, .main-nav__listItem a.active {
   padding: 6px 15px 3px 15px;
   background-color: rgba(0, 0, 0, 0.3);
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
+}
+
+/* line 84, ../sass/layout/header/_header.scss */
+.mobile-menu {
+  height: 10px;
+  margin-top: 40px;
+  float: right;
+}
+/* line 89, ../sass/layout/header/_header.scss */
+.mobile-menu a, .mobile-menu .icon-menu {
+  color: #ffffff;
+  text-decoration: none;
+}
+/* line 94, ../sass/layout/header/_header.scss */
+.mobile-menu a {
+  font-family: "HindiBold";
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 1;
+}
+/* line 102, ../sass/layout/header/_header.scss */
+.mobile-menu .icon-menu {
+  float: right;
+  font-size: 40px;
+  line-height: 1.8;
+  top: 50%;
+  display: block;
+  position: relative;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 /* line 1, ../sass/layout/footer/_footer.scss */
@@ -1182,27 +1222,42 @@ footer .footer-container {
   font-size: 12px;
   font-family: "HindiMedium";
 }
+@media only screen and (max-width: 767px) {
+  /* line 10, ../sass/layout/footer/_footer.scss */
+  .footer-logo {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}
 
-/* line 22, ../sass/layout/footer/_footer.scss */
+/* line 28, ../sass/layout/footer/_footer.scss */
 .footer-nav {
   float: right;
   list-style-type: none;
 }
-/* line 26, ../sass/layout/footer/_footer.scss */
+/* line 32, ../sass/layout/footer/_footer.scss */
 .footer-nav__listItem {
   display: inline-block;
 }
-/* line 29, ../sass/layout/footer/_footer.scss */
+/* line 35, ../sass/layout/footer/_footer.scss */
 .footer-nav__listItem:not(:first-child) a {
   margin-left: 60px;
 }
-/* line 33, ../sass/layout/footer/_footer.scss */
+/* line 39, ../sass/layout/footer/_footer.scss */
 .footer-nav__listItem a {
   color: #fff;
   font-family: "HindiBold";
   font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
+}
+@media only screen and (max-width: 767px) {
+  /* line 28, ../sass/layout/footer/_footer.scss */
+  .footer-nav {
+    float: none;
+    display: block;
+  }
 }
 
 /* line 2, ../sass/pages/homepage/_homepage.scss */
