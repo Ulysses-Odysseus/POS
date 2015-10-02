@@ -27,6 +27,16 @@
 .nav-container{
 	height: 100%;
 	max-width: $desktop;
+   margin: 0 auto;
+   @include clearfix;
+
+   @include screen(desktop) {
+		width: $desktop;
+   }
+
+   @include screen(mobile-l-max){
+		display: block;
+   }
 }
 
 .logo{
@@ -36,6 +46,10 @@
 .main-nav{
 	float: right;
 	list-style-type: none;
+
+	@include screen(mobile-l-max){
+		padding-left: 0;
+	}
 
 	&__listItem{
 		display: inline-block;

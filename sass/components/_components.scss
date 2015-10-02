@@ -10,6 +10,10 @@ body{
     @include screen(desktop) {
         width: $desktop;
     }
+	
+   @include screen(mobile-l-max){
+		padding: 0 8px;
+	}
 }
 
 .main-content{
@@ -56,11 +60,15 @@ body{
 			margin-bottom: 7px;
 			font-family: $hi-l;
 
-			@include font-size(52px);
+			@include font-size(52px, 1.3);
 
 			background: -webkit-linear-gradient(150deg, $violet 45%, $secondary-blue 100%);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
+
+			@include screen(mobile-l-max){
+				@include font-size(52px, 1.3);
+			}
 		}
 	}
 }
@@ -68,6 +76,7 @@ body{
 // Round Buttons
 .round-button{
 	padding: 10px 25px;
+	@include font-size(16px, 1);
 	text-decoration: none;
 	border: 2px solid $white;
 	@include border-radius(25px);

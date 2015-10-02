@@ -67,32 +67,62 @@
 			@include font-size(20px);
 			line-height: 1.3;
 			color: darken($light-grey, 40%);
+
+			// @include screen(mobile-l-max){
+
+			// }
 		}
 
 		.inline-items{
-		   margin-top: 50px;
-	      margin-bottom: 70px;
+	      margin: 50px auto 70px auto;
+	      @include clearfix;
+
+	      @include screen(mobile-l-max){
+	      	padding-left: 0px;
+			}
 
 			li{
 				width: 321px;
-				display: inline-block;
+				display: block;
+				float: left;
 				list-style-type: none;
 
+				@include screen(tablet-max){
+					width: 235px;
+				}
+				
+				@include screen(mobile-l-max){
+					width: 200px;
+				}
+
 				&:not(:first-child){
-					margin-left: 40px;
+					margin-left: 20px;
+
+					@include screen(mobile-l-max){
+						margin-left: 5px;
+					}
 				}
 
 				.icon{
 					color: $teal;
 					margin-bottom: 40px;
 					@include font-size(90px);
+
+					@include screen(mobile-l-max){
+						margin-bottom: 28px;
+					}
 				}
 			}
 
 			&__title{
 				font-family: $hi-b;
-				@include font-size(20px);
 				color: darken($light-grey, 40%);
+
+				@include font-size(20px);
+
+				@include screen(mobile-l-max){
+					@include font-size(18px);
+				}
 			}
 
 			&__content{
@@ -102,6 +132,14 @@
 				color: darken($light-grey, 40%);
 
 				@include font-size(15px);
+
+				@include screen(mobile-l-max){
+					@include font-size(13px);
+
+					.main-generic-link{
+						display: block;
+					}
+				}
 			}
 		}
 
@@ -123,13 +161,31 @@
 			}
 			
 			span:first-child{
-				width: 650px;
+				width: 620px;
 				line-height: 1.3;
+
+				@include screen(mobile-l-max){
+					width: 100%;
+					line-height: 1.8;
+					margin-bottom: 26px;
+				}
 			}
 
 			.btn{
 				float: right;
 				box-shadow: none;
+
+				@include screen(mobile-l-max){
+					float: none;
+					display: inline-block;
+				}
+			}
+
+			@include screen(tablet-max){
+				width: 100%;
+				text-align: center;
+
+				@include font-size(16px);
 			}
 		}
 	}
