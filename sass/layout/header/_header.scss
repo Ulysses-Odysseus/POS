@@ -85,6 +85,11 @@
 	height: 10px;
 	margin-top: 40px;
 	float: right;
+	display: none;
+
+	@include screen(mobile-l-max){
+		display: block;
+	}
 
 	a, .icon-menu{
 		color: #ffffff;

@@ -1170,20 +1170,27 @@ body {
   height: 10px;
   margin-top: 40px;
   float: right;
+  display: none;
 }
-/* line 89, ../sass/layout/header/_header.scss */
+@media only screen and (max-width: 767px) {
+  /* line 84, ../sass/layout/header/_header.scss */
+  .mobile-menu {
+    display: block;
+  }
+}
+/* line 94, ../sass/layout/header/_header.scss */
 .mobile-menu a, .mobile-menu .icon-menu {
   color: #ffffff;
   text-decoration: none;
 }
-/* line 94, ../sass/layout/header/_header.scss */
+/* line 99, ../sass/layout/header/_header.scss */
 .mobile-menu a {
   font-family: "HindiBold";
   text-transform: uppercase;
   font-size: 20px;
   line-height: 1;
 }
-/* line 102, ../sass/layout/header/_header.scss */
+/* line 107, ../sass/layout/header/_header.scss */
 .mobile-menu .icon-menu {
   float: right;
   font-size: 40px;
