@@ -27,6 +27,10 @@
 				@include screen(mobile-l-max){
 					@include font-size(55px, 1);
 				}
+
+				@include screen(mobile-max){
+					@include font-size(28px, 1);
+				}
 			}
 			p{
 			   margin: 50px 0;
@@ -36,6 +40,10 @@
 
 				@include screen(mobile-l-max){
 					@include font-size(20px);
+				}
+
+				@include screen(mobile-max){
+					@include font-size(13px);
 				}
 			}
 
@@ -200,11 +208,23 @@
 	&__main-content{
 		.video{
 			margin-bottom: 50px;
+			
+			@include screen(mobile-max){
+				// max-width: 300px;
+		   }
 		}
 
 		.testimonials-slider{
 			max-width: 730px;
 		   margin: 0 auto;
+
+		   @include screen(mobile-l-max){ //
+		   	max-width: 320px;
+		   }
+
+		   @include screen(mobile-max){
+				max-width: 300px;
+		   }
 		   
 		   .ts-items{
 		   	// background: red;

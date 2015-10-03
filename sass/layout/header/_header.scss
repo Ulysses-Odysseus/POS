@@ -9,9 +9,14 @@
 	z-index: 1;
 	background-color: rgba(0,107,177,0);
 	
+	@include clearfix;
 	@include transition-duration(0.5s);
 	@include transition-timing-function(cubic-bezier( 0.215, 0.610, 0.355, 1.000 )); //P1, P2, P3, P4
 	@include transition-property(height, padding-top, padding-left, background-color);
+	
+	@include screen(mobile-l-max){
+	   padding-top: 0;
+	}
 
 	&--hidden{
 		@include transform(translateY(-100%));
@@ -35,20 +40,25 @@
    }
 
    @include screen(mobile-l-max){
+   	margin: 0px 10px;
 		display: block;
-   }
-	
-	@include screen(mobile-l-max){
-	   margin: 0px 10px;
-	}
+   }	
 }
 
 .logo{
-	float: left
+	float: left;
+	
+	img{
+		@include screen(mobile-l-max){
+			width: 150px;
+			margin-top: 15px;
+		}
+	}
 }
 
 .main-nav{
 	float: right;
+	display: block;
 	list-style-type: none;
 
 	@include screen(mobile-l-max){
@@ -57,10 +67,20 @@
 	}
 
 	&__listItem{
+		line-height: 2.5;
 		display: inline-block;
 		
 		&:not(:first-child) a{
 			margin-left: 30px;
+
+			@include screen(mobile-l-max){
+				margin-left: 0;
+				margin-bottom: 10px;
+			}
+		}
+		
+		@include screen(mobile-l-max){
+			margin-bottom: 10px;
 		}
 
 		a{
@@ -76,6 +96,16 @@
 				background-color:rgba(0,0,0,0.3);
 
 				@include border-radius(15px);
+
+				@include screen(mobile-l-max){
+					padding: 0;
+				}
+			}
+
+			@include screen(mobile-l-max){
+				width: 100%;
+				padding: 0;
+				display: block;
 			}
 		}
 	}
@@ -101,7 +131,10 @@
 		text-transform: uppercase;
 
 		@include font-size(20px, 1);
-
+		
+		@include screen(mobile-max){
+			@include font-size(14px, 1);
+		}
 	}
 
 	.icon-menu{
