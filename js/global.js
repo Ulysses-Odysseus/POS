@@ -71,7 +71,7 @@ $(document).ready(function(){
 			settings: {
 			  arrows: false,
 			  centerMode: true,
-			  slidesToShow: 1
+			  slidesToShow: 2
 			}
 		},
 		{
@@ -130,7 +130,7 @@ $(document).ready(function(){
 			     .height(newWidth * $el.data('aspectRatio'));
 			});
 	  };
-		console.log($allVideos + ' How many: ' + $allVideos.length);
+		// console.log($allVideos + ' How many: ' + $allVideos.length);
 	// Kick off one resize to fix all videos on page load
 	}).resize();
 });

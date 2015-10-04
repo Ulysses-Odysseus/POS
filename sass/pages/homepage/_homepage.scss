@@ -83,6 +83,7 @@
 
 		.inline-items{
 	      margin: 50px auto 70px auto;
+	      
 	      @include clearfix;
 
 	      @include screen(mobile-l-max){
@@ -103,11 +104,19 @@
 					width: 200px;
 				}
 
+				@include screen(mobile-max){
+					width: 100%;
+				}
+
 				&:not(:first-child){
 					margin-left: 20px;
 
 					@include screen(mobile-l-max){
 						margin-left: 5px;
+					}
+
+					@include screen(mobile-max){
+						margin-left: 0px;
 					}
 				}
 
