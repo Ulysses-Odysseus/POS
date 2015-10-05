@@ -61,6 +61,13 @@ body{
 			&:after{
 				margin-left: 7px;
 			}
+
+			// No lines on the sides
+			&--no-decoration{
+				&:before, &:after{
+					content: none;
+				}
+			}
 		}
 
 		.gradientTitle{
@@ -85,6 +92,12 @@ body{
 	}
 }
 
+// Quotes :: Default values.
+.quote{
+	color: $main-blue;
+	font-family: $hi-sb;
+}
+
 // Round Buttons
 .round-button{
 	padding: 10px 25px;
@@ -102,6 +115,13 @@ body{
     font-family: $hi-sb;
 
     @include font-size(18px);
+
+   @include screen(tablet-max){
+		width: 100%;
+		text-align: center;
+
+		@include font-size(16px);
+	}
     
     // Styles :: Note, styles coming from bourbon mixin.
     &--simple{
@@ -143,4 +163,8 @@ body{
 		// width: 100%    !important;
 		// height: auto   !important;
 	}
+}
+
+.left-section{
+	text-align: left;
 }
