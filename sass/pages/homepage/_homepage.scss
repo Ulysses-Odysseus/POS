@@ -274,6 +274,7 @@
 				height: 185px;
 				text-align: left;
 				border: 1px solid #e2e7e2;
+				@include border-radius(7px);
 
 				@include screen(mobile-max){
 					text-align: center;
