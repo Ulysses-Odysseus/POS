@@ -53,6 +53,10 @@ body{
 				display: inline-block;
 				vertical-align: middle;
 				background: $off-white;
+
+				@include screen(mobile-max){
+					display: none;
+				}
 			}
 
 			&:before{
@@ -61,7 +65,7 @@ body{
 			&:after{
 				margin-left: 7px;
 			}
-
+			
 			// No lines on the sides
 			&--no-decoration{
 				&:before, &:after{
