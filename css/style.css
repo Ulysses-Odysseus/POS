@@ -677,13 +677,81 @@ body {
   }
 }
 
-/* line 96, ../sass/components/_components.scss */
+/* line 95, ../sass/components/_components.scss */
+.center-section {
+  margin-bottom: 130px;
+  text-align: center;
+}
+/* line 101, ../sass/components/_components.scss */
+.center-section__main-content .main-intro {
+  font-family: "HindiRegular";
+  font-size: 20px;
+  line-height: 1.8;
+  line-height: 1.3;
+  color: #2f2f2f;
+}
+/* line 108, ../sass/components/_components.scss */
+.center-section__main-content .inline-items {
+  margin: 50px auto 70px auto;
+  content: '';
+  display: table;
+  clear: both;
+}
+@media only screen and (max-width: 767px) {
+  /* line 108, ../sass/components/_components.scss */
+  .center-section__main-content .inline-items {
+    padding-left: 0px;
+  }
+}
+/* line 117, ../sass/components/_components.scss */
+.center-section__main-content .inline-items li {
+  width: 321px;
+  display: block;
+  float: left;
+  list-style-type: none;
+}
+@media only screen and (max-width: 1023px) {
+  /* line 117, ../sass/components/_components.scss */
+  .center-section__main-content .inline-items li {
+    width: 235px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 117, ../sass/components/_components.scss */
+  .center-section__main-content .inline-items li {
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 639px) {
+  /* line 117, ../sass/components/_components.scss */
+  .center-section__main-content .inline-items li {
+    width: 100%;
+  }
+}
+/* line 135, ../sass/components/_components.scss */
+.center-section__main-content .inline-items li:not(:first-child) {
+  margin-left: 20px;
+}
+@media only screen and (max-width: 767px) {
+  /* line 135, ../sass/components/_components.scss */
+  .center-section__main-content .inline-items li:not(:first-child) {
+    margin-left: 5px;
+  }
+}
+@media only screen and (max-width: 639px) {
+  /* line 135, ../sass/components/_components.scss */
+  .center-section__main-content .inline-items li:not(:first-child) {
+    margin-left: 0px;
+  }
+}
+
+/* line 152, ../sass/components/_components.scss */
 .quote {
   color: #0070b8;
   font-family: "HindiSemiBold";
 }
 
-/* line 102, ../sass/components/_components.scss */
+/* line 158, ../sass/components/_components.scss */
 .round-button {
   padding: 10px 25px;
   font-size: 16px;
@@ -695,7 +763,7 @@ body {
   border-radius: 25px;
 }
 
-/* line 111, ../sass/components/_components.scss */
+/* line 167, ../sass/components/_components.scss */
 .btn {
   padding: 10px 20px;
   color: #ffffff;
@@ -705,7 +773,7 @@ body {
   line-height: 1.8;
 }
 @media only screen and (max-width: 1023px) {
-  /* line 111, ../sass/components/_components.scss */
+  /* line 167, ../sass/components/_components.scss */
   .btn {
     width: 100%;
     text-align: center;
@@ -713,7 +781,7 @@ body {
     line-height: 1.8;
   }
 }
-/* line 127, ../sass/components/_components.scss */
+/* line 183, ../sass/components/_components.scss */
 .btn--simple {
   border: 1px solid #076fe4;
   border-radius: 3px;
@@ -748,7 +816,7 @@ body {
   cursor: not-allowed;
   opacity: 0.5;
 }
-/* line 130, ../sass/components/_components.scss */
+/* line 186, ../sass/components/_components.scss */
 .btn--pill {
   border: 1px solid #3371b2;
   border-color: #3371b2 #2457a3 #164297;
@@ -793,13 +861,13 @@ body {
   cursor: not-allowed;
   opacity: 0.5;
 }
-/* line 136, ../sass/components/_components.scss */
+/* line 192, ../sass/components/_components.scss */
 .btn--blue {
   color: #ffffff;
   background: #0070b8;
 }
 
-/* line 143, ../sass/components/_components.scss */
+/* line 199, ../sass/components/_components.scss */
 .main-generic-link {
   color: #0070b8;
   font-family: "HindiSemiBold";
@@ -808,7 +876,7 @@ body {
   line-height: 1.8;
 }
 
-/* line 152, ../sass/components/_components.scss */
+/* line 208, ../sass/components/_components.scss */
 .icon {
   display: inline-block;
   width: 1em;
@@ -816,7 +884,7 @@ body {
   fill: currentColor;
 }
 
-/* line 168, ../sass/components/_components.scss */
+/* line 224, ../sass/components/_components.scss */
 .left-section {
   text-align: left;
 }
@@ -1506,86 +1574,22 @@ footer .footer-container {
 
 /* line 66, ../sass/pages/homepage/_homepage.scss */
 .services {
-  text-align: center;
-  margin-bottom: 130px;
   background: url("../images/homepage/world-map-dots.png") no-repeat center;
 }
 /* line 73, ../sass/pages/homepage/_homepage.scss */
-.services__main-content .main-intro {
-  font-family: "HindiRegular";
-  font-size: 20px;
-  line-height: 1.8;
-  line-height: 1.3;
-  color: #2f2f2f;
-}
-/* line 84, ../sass/pages/homepage/_homepage.scss */
-.services__main-content .inline-items {
-  margin: 50px auto 70px auto;
-  content: '';
-  display: table;
-  clear: both;
-}
-@media only screen and (max-width: 767px) {
-  /* line 84, ../sass/pages/homepage/_homepage.scss */
-  .services__main-content .inline-items {
-    padding-left: 0px;
-  }
-}
-/* line 93, ../sass/pages/homepage/_homepage.scss */
-.services__main-content .inline-items li {
-  width: 321px;
-  display: block;
-  float: left;
-  list-style-type: none;
-}
-@media only screen and (max-width: 1023px) {
-  /* line 93, ../sass/pages/homepage/_homepage.scss */
-  .services__main-content .inline-items li {
-    width: 235px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  /* line 93, ../sass/pages/homepage/_homepage.scss */
-  .services__main-content .inline-items li {
-    width: 200px;
-  }
-}
-@media only screen and (max-width: 639px) {
-  /* line 93, ../sass/pages/homepage/_homepage.scss */
-  .services__main-content .inline-items li {
-    width: 100%;
-  }
-}
-/* line 111, ../sass/pages/homepage/_homepage.scss */
-.services__main-content .inline-items li:not(:first-child) {
-  margin-left: 20px;
-}
-@media only screen and (max-width: 767px) {
-  /* line 111, ../sass/pages/homepage/_homepage.scss */
-  .services__main-content .inline-items li:not(:first-child) {
-    margin-left: 5px;
-  }
-}
-@media only screen and (max-width: 639px) {
-  /* line 111, ../sass/pages/homepage/_homepage.scss */
-  .services__main-content .inline-items li:not(:first-child) {
-    margin-left: 0px;
-  }
-}
-/* line 123, ../sass/pages/homepage/_homepage.scss */
-.services__main-content .inline-items li .icon {
+.services__main-content .inline-items .icon {
   color: #50c2c9;
   margin-bottom: 40px;
   font-size: 90px;
   line-height: 1.8;
 }
 @media only screen and (max-width: 767px) {
-  /* line 123, ../sass/pages/homepage/_homepage.scss */
-  .services__main-content .inline-items li .icon {
+  /* line 73, ../sass/pages/homepage/_homepage.scss */
+  .services__main-content .inline-items .icon {
     margin-bottom: 28px;
   }
 }
-/* line 134, ../sass/pages/homepage/_homepage.scss */
+/* line 83, ../sass/pages/homepage/_homepage.scss */
 .services__main-content .inline-items__title {
   font-family: "HindiBold";
   color: #2f2f2f;
@@ -1593,13 +1597,13 @@ footer .footer-container {
   line-height: 1.8;
 }
 @media only screen and (max-width: 767px) {
-  /* line 134, ../sass/pages/homepage/_homepage.scss */
+  /* line 83, ../sass/pages/homepage/_homepage.scss */
   .services__main-content .inline-items__title {
     font-size: 18px;
     line-height: 1.8;
   }
 }
-/* line 145, ../sass/pages/homepage/_homepage.scss */
+/* line 94, ../sass/pages/homepage/_homepage.scss */
 .services__main-content .inline-items__content {
   font-family: "HindiMedium";
   margin-bottom: 20px;
@@ -1609,17 +1613,17 @@ footer .footer-container {
   line-height: 1.8;
 }
 @media only screen and (max-width: 767px) {
-  /* line 145, ../sass/pages/homepage/_homepage.scss */
+  /* line 94, ../sass/pages/homepage/_homepage.scss */
   .services__main-content .inline-items__content {
     font-size: 13px;
     line-height: 1.8;
   }
-  /* line 156, ../sass/pages/homepage/_homepage.scss */
+  /* line 105, ../sass/pages/homepage/_homepage.scss */
   .services__main-content .inline-items__content .main-generic-link {
     display: block;
   }
 }
-/* line 163, ../sass/pages/homepage/_homepage.scss */
+/* line 112, ../sass/pages/homepage/_homepage.scss */
 .services__main-content .quote {
   margin: 0 auto;
   max-width: 840px;
@@ -1627,41 +1631,41 @@ footer .footer-container {
   font-size: 18px;
   line-height: 1.8;
 }
-/* line 170, ../sass/pages/homepage/_homepage.scss */
+/* line 119, ../sass/pages/homepage/_homepage.scss */
 .services__main-content .quote strong {
   font-family: "HindiBold";
 }
-/* line 174, ../sass/pages/homepage/_homepage.scss */
+/* line 123, ../sass/pages/homepage/_homepage.scss */
 .services__main-content .quote span, .services__main-content .quote .btn {
   display: inline-block;
 }
-/* line 178, ../sass/pages/homepage/_homepage.scss */
+/* line 127, ../sass/pages/homepage/_homepage.scss */
 .services__main-content .quote span:first-child {
   width: 620px;
   line-height: 1.3;
 }
 @media only screen and (max-width: 767px) {
-  /* line 178, ../sass/pages/homepage/_homepage.scss */
+  /* line 127, ../sass/pages/homepage/_homepage.scss */
   .services__main-content .quote span:first-child {
     width: 100%;
     line-height: 1.8;
     margin-bottom: 26px;
   }
 }
-/* line 189, ../sass/pages/homepage/_homepage.scss */
+/* line 138, ../sass/pages/homepage/_homepage.scss */
 .services__main-content .quote .btn {
   float: right;
   box-shadow: none;
 }
 @media only screen and (max-width: 767px) {
-  /* line 189, ../sass/pages/homepage/_homepage.scss */
+  /* line 138, ../sass/pages/homepage/_homepage.scss */
   .services__main-content .quote .btn {
     float: none;
     display: inline-block;
   }
 }
 
-/* line 203, ../sass/pages/homepage/_homepage.scss */
+/* line 152, ../sass/pages/homepage/_homepage.scss */
 .expertise {
   width: 100%;
   content: '';
@@ -1671,63 +1675,63 @@ footer .footer-container {
   -moz-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.17);
   box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.17);
 }
-/* line 210, ../sass/pages/homepage/_homepage.scss */
+/* line 159, ../sass/pages/homepage/_homepage.scss */
 .expertise .section-side-left, .expertise .section-side-bar {
   float: left;
 }
-/* line 214, ../sass/pages/homepage/_homepage.scss */
+/* line 163, ../sass/pages/homepage/_homepage.scss */
 .expertise .section-side-bar {
   margin-right: 65px;
 }
-/* line 217, ../sass/pages/homepage/_homepage.scss */
+/* line 166, ../sass/pages/homepage/_homepage.scss */
 .expertise .section-side-bar img {
   vertical-align: bottom;
 }
-/* line 220, ../sass/pages/homepage/_homepage.scss */
+/* line 169, ../sass/pages/homepage/_homepage.scss */
 .expertise .section-side-left {
   width: 900px;
 }
-/* line 224, ../sass/pages/homepage/_homepage.scss */
+/* line 173, ../sass/pages/homepage/_homepage.scss */
 .expertise .inline-items {
   color: #363636;
   font-family: "HindiMedium";
 }
-/* line 228, ../sass/pages/homepage/_homepage.scss */
+/* line 177, ../sass/pages/homepage/_homepage.scss */
 .expertise .inline-items .col-left {
   width: 350px;
   float: left;
 }
-/* line 232, ../sass/pages/homepage/_homepage.scss */
+/* line 181, ../sass/pages/homepage/_homepage.scss */
 .expertise .inline-items .col-left p {
   margin-bottom: 30px;
   font-size: 15px;
   line-height: 1.3;
 }
-/* line 237, ../sass/pages/homepage/_homepage.scss */
+/* line 186, ../sass/pages/homepage/_homepage.scss */
 .expertise .inline-items .col-left p strong {
   font-family: "HindiBold";
 }
-/* line 243, ../sass/pages/homepage/_homepage.scss */
+/* line 192, ../sass/pages/homepage/_homepage.scss */
 .expertise .inline-items .col-left .quote .icon-tips {
   font-size: 60px;
   float: left;
 }
-/* line 247, ../sass/pages/homepage/_homepage.scss */
+/* line 196, ../sass/pages/homepage/_homepage.scss */
 .expertise .inline-items .col-left .quote .btn-container {
   margin-top: 15px;
   text-align: center;
 }
-/* line 253, ../sass/pages/homepage/_homepage.scss */
+/* line 202, ../sass/pages/homepage/_homepage.scss */
 .expertise .inline-items .col-right {
   width: 490px;
   float: right;
 }
-/* line 257, ../sass/pages/homepage/_homepage.scss */
+/* line 206, ../sass/pages/homepage/_homepage.scss */
 .expertise .inline-items .col-right ul {
   margin: 0;
   padding: 0;
 }
-/* line 262, ../sass/pages/homepage/_homepage.scss */
+/* line 211, ../sass/pages/homepage/_homepage.scss */
 .expertise .inline-items .col-right ul li .item-title {
   margin: 0 0 10px 0;
   padding: 0;
@@ -1735,67 +1739,170 @@ footer .footer-container {
   font-size: 20px;
   line-height: 1;
 }
-/* line 269, ../sass/pages/homepage/_homepage.scss */
+/* line 218, ../sass/pages/homepage/_homepage.scss */
 .expertise .inline-items .col-right ul li .item-info {
   margin: 0 0 15px 0;
   font-size: 15px;
   line-height: 1.5;
 }
 
-/* line 281, ../sass/pages/homepage/_homepage.scss */
+/* line 234, ../sass/pages/homepage/_homepage.scss */
+.about__main-content .main-intro {
+  max-width: 780px;
+  margin: 0 auto;
+}
+/* line 239, ../sass/pages/homepage/_homepage.scss */
+.about__main-content .team-member {
+  margin-top: 50px;
+}
+/* line 242, ../sass/pages/homepage/_homepage.scss */
+.about__main-content .team-member img {
+  margin-right: 25px;
+  display: inline-block;
+}
+/* line 247, ../sass/pages/homepage/_homepage.scss */
+.about__main-content .team-member__info {
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+}
+/* line 252, ../sass/pages/homepage/_homepage.scss */
+.about__main-content .team-member__info .name-position {
+  display: block;
+  margin-bottom: 10px;
+  font-family: "HindiBold";
+  margin-bottom: 15px;
+  font-size: 20px;
+  line-height: 1.4;
+}
+/* line 260, ../sass/pages/homepage/_homepage.scss */
+.about__main-content .team-member__info a {
+  color: #0070b8;
+  display: block;
+  font-family: "HindiSemiBold";
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 1;
+}
+/* line 272, ../sass/pages/homepage/_homepage.scss */
+.about__main-content .inline-items li {
+  padding: 20px;
+  height: 185px;
+  text-align: left;
+  border: 1px solid #e2e7e2;
+}
+@media only screen and (max-width: 639px) {
+  /* line 272, ../sass/pages/homepage/_homepage.scss */
+  .about__main-content .inline-items li {
+    text-align: center;
+  }
+}
+/* line 285, ../sass/pages/homepage/_homepage.scss */
+.about__main-content .inline-items .newsbyte-area svg {
+  color: #50c2c9;
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 25px;
+  line-height: 1.8;
+}
+/* line 293, ../sass/pages/homepage/_homepage.scss */
+.about__main-content .inline-items .newsbyte-area p {
+  color: #959595;
+  font-family: "HindiSemiBold";
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 1.3;
+}
+/* line 303, ../sass/pages/homepage/_homepage.scss */
+.about__main-content .inline-items__title {
+  font-family: "HindiBold";
+  color: #2f2f2f;
+  font-size: 20px;
+  line-height: 1.8;
+}
+@media only screen and (max-width: 767px) {
+  /* line 303, ../sass/pages/homepage/_homepage.scss */
+  .about__main-content .inline-items__title {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+}
+/* line 314, ../sass/pages/homepage/_homepage.scss */
+.about__main-content .inline-items__content {
+  font-family: "HindiMedium";
+  margin-bottom: 20px;
+  line-height: 1.3;
+  color: #959595;
+  font-size: 15px;
+  line-height: 1.8;
+}
+@media only screen and (max-width: 767px) {
+  /* line 314, ../sass/pages/homepage/_homepage.scss */
+  .about__main-content .inline-items__content {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+}
+/* line 326, ../sass/pages/homepage/_homepage.scss */
+.about__main-content .inline-items__content .main-generic-link {
+  display: block;
+}
+
+/* line 335, ../sass/pages/homepage/_homepage.scss */
 .testimonials {
   text-align: center;
   margin-bottom: 130px;
   background: url("../images/homepage/abstract-connected.png") no-repeat center;
 }
-/* line 287, ../sass/pages/homepage/_homepage.scss */
+/* line 341, ../sass/pages/homepage/_homepage.scss */
 .testimonials__main-content .video {
   margin-bottom: 50px;
 }
-/* line 295, ../sass/pages/homepage/_homepage.scss */
+/* line 349, ../sass/pages/homepage/_homepage.scss */
 .testimonials__main-content .testimonials-slider {
   max-width: 730px;
   margin: 0 auto;
 }
 @media only screen and (max-width: 767px) {
-  /* line 295, ../sass/pages/homepage/_homepage.scss */
+  /* line 349, ../sass/pages/homepage/_homepage.scss */
   .testimonials__main-content .testimonials-slider {
     max-width: 320px;
   }
 }
 @media only screen and (max-width: 639px) {
-  /* line 295, ../sass/pages/homepage/_homepage.scss */
+  /* line 349, ../sass/pages/homepage/_homepage.scss */
   .testimonials__main-content .testimonials-slider {
     max-width: 300px;
   }
 }
-/* line 307, ../sass/pages/homepage/_homepage.scss */
+/* line 361, ../sass/pages/homepage/_homepage.scss */
 .testimonials__main-content .testimonials-slider .ts-items {
   margin: 0 10px;
   text-align: center;
 }
-/* line 312, ../sass/pages/homepage/_homepage.scss */
+/* line 366, ../sass/pages/homepage/_homepage.scss */
 .testimonials__main-content .testimonials-slider .ts-items img, .testimonials__main-content .testimonials-slider .ts-items span, .testimonials__main-content .testimonials-slider .ts-items .icon {
   display: block;
 }
-/* line 315, ../sass/pages/homepage/_homepage.scss */
+/* line 369, ../sass/pages/homepage/_homepage.scss */
 .testimonials__main-content .testimonials-slider .ts-items > img {
   margin-bottom: 30px;
   width: 116px;
   height: 112px;
   display: inline-table;
 }
-/* line 322, ../sass/pages/homepage/_homepage.scss */
+/* line 376, ../sass/pages/homepage/_homepage.scss */
 .testimonials__main-content .testimonials-slider .ts-items .name, .testimonials__main-content .testimonials-slider .ts-items .title {
   font-family: "HindiBold";
   color: #2f2f2f;
 }
-/* line 327, ../sass/pages/homepage/_homepage.scss */
+/* line 381, ../sass/pages/homepage/_homepage.scss */
 .testimonials__main-content .testimonials-slider .ts-items .name {
   font-size: 20px;
   line-height: 1.3;
 }
-/* line 331, ../sass/pages/homepage/_homepage.scss */
+/* line 385, ../sass/pages/homepage/_homepage.scss */
 .testimonials__main-content .testimonials-slider .ts-items .title {
   font-size: 15px;
   line-height: 1.8;
