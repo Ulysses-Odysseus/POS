@@ -4,6 +4,15 @@
 	<title>Pacific Origin Solutions</title>
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!--
+		
+		viewport meta missing. Reponsive would not work with it.
+
+		Also whenever you start fresh markup use this boilerplate template https://html5boilerplate.com/
+
+	-->
+
 </head>
 <body>
 
@@ -56,6 +65,12 @@
 
 	<div class="main-content">
 
+
+		<!--
+
+			Section tag should not be used to wrap content in order to style it. This job is for div, not section.
+			read more about section here: http://www.w3.org/TR/html5/sections.html#the-section-element
+		-->
 		<section class="home-hero">
 			<div class="home-hero__intro container-fluid">
 				<svg class="icon icon-molecule"><use xlink:href="#icon-molecule"></use></svg>
@@ -116,6 +131,81 @@
 
 			</div>
 		</section>
+
+		<!-- better naming and markup
+
+			// sh = section head. This is module which can be use globaly.
+
+			<div class="services">
+
+				<header class="sh"> 
+					<h1 class="sh__heading"></h1>
+					<h2 class="sh__subheading"></h2>
+					<p class="sh__copy"></p>
+				</header>
+
+				<div class="services__row">
+					<div class="services__col">
+						<h3 class="services__title"></h3>
+						<p class="services__description"></p>
+						<a href="#"></a>
+					</div>
+					<div class="services__col">
+						<h3 class="services__title"></h3>
+						<p class="services__description"></p>
+						<a href="#"></a>
+					</div>
+					<div class="services__col">
+						<h3 class="services__title"></h3>
+						<p class="services__description"></p>
+						<a href="#"></a>
+					</div>
+				</div>
+		
+			</div>
+
+
+			// SCSS would look like this
+				
+			.sh{
+				&__heading{}
+
+				&__subheading()
+
+				&__copy{}
+			}
+
+			.services{
+				
+				&__row{}
+
+				&__col{}
+
+				&__title{}
+				
+				&__description{}
+
+			}
+
+
+			// CSS output would be more clean and optimized now
+			
+			.sh__heading{}
+
+			.sh__subheading{}
+
+			.sh__copy{}
+
+			.services{}
+			
+			.services__row{}
+
+			.services__col{}
+
+			.services__title{}
+
+			.services__description{}
+		-->
 
 		<section class="expertise white-section">
 

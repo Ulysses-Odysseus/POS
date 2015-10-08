@@ -32,6 +32,25 @@
 					@include font-size(28px, 1);
 				}
 			}
+
+			/* 
+				css output of h1 would be like this .home-hero__intro__message h1
+					
+				please avoide large names and try to advantages of BEM. It can be done like this
+
+				.home-hero {
+					
+					&__heading{
+						styles
+					}
+				}
+
+				output would be : .home-hero__heading
+				
+
+			*/
+
+
 			p{
 			   margin: 50px 0;
 				font-size: 22px;
@@ -57,16 +76,23 @@
 					color: $main-blue;
 					background: $white;
 				}
+
+				/*  button styles should have defined globally */
 			}
 		}
 	}
 }
+
+
+
 
 // Services - Section 2
 .services{
 	background: url('../images/homepage/world-map-dots.png') no-repeat center;	
 
 	&__main-content{
+
+		/* main-content class name does not make any sence  */
 
 		.inline-items{
 
@@ -107,6 +133,13 @@
 					}
 				}
 			}
+
+
+			/* 
+				&__title,
+				&__content has same color should have been defined once
+				
+			*/
 		}
 
 		.quote{
@@ -117,7 +150,7 @@
 			@include font-size(18px);
 
 			strong{
-				font-family: $hi-b;
+				font-family: $hi-b; // should be set globaly 
 			}
 
 			span, .btn{

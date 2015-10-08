@@ -20,7 +20,9 @@ body{
 	}
 }
 
-.main-content{
+
+
+.main-content{ // it should be section specific 
 	& > :first-child{
     	padding-top: 200px;
 
@@ -224,6 +226,8 @@ body{
 	text-decoration: none;
 	border: 2px solid $white;
 	@include border-radius(25px);
+
+	/* It should be part of .btn like other modifiers */
 }
 
 // Boxed Buttons
@@ -261,6 +265,8 @@ body{
  	   border: 1px solid darken($teal, 25%);
     	background: $teal;
     }
+
+
 }
 
 // Generic Links

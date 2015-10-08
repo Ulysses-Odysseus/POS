@@ -26,24 +26,41 @@
 		padding-top: 10px;
 		background-color: rgba(0,107,177,0.9);
 	}
+
+
+	/*
+		
+		class name &--in-content. does not make any sence. 
+			
+		@include clearfix; - It should not overwrite display block to table. 
+
+
+	*/
 }
 
 // Header Child Elements
 .nav-container{
-	height: 100%;
+	height: 100%; //  height is not required here
 	max-width: $desktop;
    margin: 0 auto;
-   @include clearfix;
+   @include clearfix; 
 
    @include screen(desktop) {
-		width: $desktop;
+		width: $desktop; // why you add with here since it has max-width applied above.
    }
 
    @include screen(mobile-l-max){
    	margin: 0px 10px;
-		display: block;
+		display: block; // div is block level element so do not need make it block here
    }	
 }
+
+	/*
+		
+		.nav-container - should have fluid width instead fixed 
+
+
+	*/
 
 .logo{
 	float: left;
@@ -58,15 +75,15 @@
 
 .main-nav{
 	float: right;
-	display: block;
+	display: block; // adding block would not make differences since ul is block level element  
 	list-style-type: none;
 
 	@include screen(mobile-l-max){
 		display: none;
-		padding-left: 0;
+		padding-left: 0; // element is hidden thenwhy you added padding here?
 	}
 
-	&__listItem{
+	&__listItem{ // always try to use lowercase 
 		line-height: 2.5;
 		display: inline-block;
 		
